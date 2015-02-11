@@ -71,9 +71,13 @@ section p {
     margin: 40px 100px;
 }
 
-#links a, #links a:hover, #links a:visited {
+#links a, #links a:visited {
     font-size: 30px;
     margin: 20px;
     color: #777;
     text-decoration: none;
+}
+
+#links a:hover {
+    color: rgba(0,0,0,0.8);
 }
