@@ -1,0 +1,79 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translateZ(0);
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+    z-index: 100;
+}
+
+#splash {
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+#splash .title {
+    display: flex;
+    flex-flow: column;
+    flex: 1 100%;
+    justify-content: center;
+}
+
+#splash .title > * {
+    text-align: center;
+}
+
+#background {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    background-image: url("bkk.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.avatar {
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    border: 3px solid #fff;
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+}
+
+section:last-child {
+    align-content: center;
+}
+
+section p {
+    margin: 40px 100px;
+}
+
+#links a, #links a:hover, #links a:visited {
+    font-size: 30px;
+    margin: 20px;
+    color: #777;
+    text-decoration: none;
+}
