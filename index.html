@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Max Barinov | Front-end developer</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,700,500,400italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/style.css"/>
+    <link rel="stylesheet"
+          href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div id="background"></div>
+<section id="splash">
+    <div class="title">
+        <img class="avatar"
+             src="images/399211.png"
+             title="avatar">
+
+        <h1>Max Barinov</h1>
+        <span>Creative front-end developer, freelancer</span>
+
+    </div>
+</section>
+<section>
+    <p>
+        My passion is to create outstanding apps and services. I'm specialized only in AngularJS for greater
+        concentration on these technology. No doubt I know all the related techs, such as Node.js, jQuery and all html5
+        features.</p>
+    <p>
+        Now live in Bangkok and usually help seed startups to launch MVP. Before that I've created a web component
+        platform for JetBrains. It is used in such products as YouTrack, Upsource and a few more. Now, I'm working as freelancer.</p>
+
+
+    <div id="links">
+        <a title="Github"
+           href="https://github.com/mbarinov">
+            <i class="icon-github"></i>
+        </a>
+
+        <a title="CV"
+           href="cv.html">
+            <i class="icon-study"></i>
+        </a>
+
+        <a title="Skype"
+           href="skype:f1c0723e587d3ac2f74e19a0fbe1bec1?chat">
+            <i class="icon-skype"></i>
+        </a>
+
+        <a title="Mail"
+           href="mailto:barinovmaxim@gmail.com?Subject=I%20need%20front-end!">
+            <i class="icon-mail"></i>
+        </a>
+
+    </div>
+
+
+</section>
+<script>
+    (function () {
+        'use strict';
+
+        var i = '0';
+        var style = function (i) {
+            var result = '  -webkit-filter: blur(' + i + 'px);' +
+                    '-moz-filter: blur(' + i + 'px); ' +
+                    '-o-filter: blur(' + i + 'px); ' +
+                    '-ms-filter: blur(' + i + 'px);' +
+                    'filter: blur(' + i + 'px);';
+
+            return result;
+        };
+
+        document.addEventListener('scroll', function () {
+
+            var scrollTop = document.documentElement.scrollTop;
+
+            if (scrollTop < document.documentElement.clientHeight) {
+                i = scrollTop / 42;
+                document.querySelector('#background').setAttribute('style', style(i));
+            }
+        });
+    }());
+</script>
+</body>
+</html>
