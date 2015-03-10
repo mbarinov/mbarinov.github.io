@@ -178,3 +178,17 @@ section p a:nth-child(n) {
     min-height: 400px;
     background: transparent;
 }
+
+#location {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
+    font-size: 14px;
+    color: #666;
+    opacity: .8;
+}
+
+#location:hover {
+    opacity: 1;
+}
