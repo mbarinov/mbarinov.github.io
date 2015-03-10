@@ -3,7 +3,21 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Max Barinov | Front-end developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,700,500,400italic&subset=latin,cyrillic'
+
+    <meta name="description"
+          lang="en"
+          content="I'm creative frontend developer. I'm specialized is a AngularJS and relative technologies.">
+
+    <meta name="keywords"
+          lang="en"
+          content="angular angularjs javascript html5 css3 coffeescript sass stylus less nodejs web components polymer git bower ">
+
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,100,100italic,700,500,400italic&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/style.css"/>
     <link rel="stylesheet"
@@ -15,21 +29,31 @@
 <section id="splash">
     <div class="title">
         <img class="avatar"
-             src="399211.png"
+             src="images/399211.png"
              title="avatar">
 
         <h1>Max Barinov</h1>
         <span>Creative front-end developer</span>
+        <a title="Odesk" href="https://www.odesk.com/users/~0100b2004a2ca9a09c?edit#edit">Freelancer</a>
 
     </div>
+
+    <div id="location">Today, I'm in Saint-Petersburg, Russia.</div>
 </section>
 <section>
-    <p>Most of all I want to create outstanding services, this is my passion. My specialization is only AngularJS for
+    <p>
+        Most of all I want to create outstanding services, this is my passion. My specialization is only AngularJS for
         greater concentration on these technology. Of course I know all related techs, such as Node.js, jQuery and all
-        html5 features.</p>
+        html5 features.
+    </p>
 
-    <p>Now I'm living in Bangkok and usually help seed startups to launch MVP. Before that I created a web component
-        platform for JetBrains. It is used in such products as YouTrack, Upsource and few more.</p>
+    <p>
+        I worked in <a href="http://lingualeo.com/">LinguaLeo</a> as a frontend developer. Also, I've created a web
+        component
+        platform for <a href="http://www.jetbrains.com">JetBrains</a>. It is used in such products as <a
+            href="http://www.jetbrains.com/youtrack/">YouTrack</a>, <a
+            href="http://www.jetbrains.com/upsource">Upsource</a> and a few more. Now, I'm working as
+        freelancer.</p>
 
     <div id="links">
         <a title="Github"
@@ -53,9 +77,8 @@
         </a>
 
     </div>
-
-
 </section>
+
 <script>
     (function () {
         'use strict';
@@ -73,7 +96,7 @@
 
         document.addEventListener('scroll', function () {
 
-            var scrollTop = document.documentElement.scrollTop;
+            var scrollTop = document.body.scrollTop;
 
             if (scrollTop < document.documentElement.clientHeight) {
                 i = scrollTop / 42;
@@ -81,6 +104,23 @@
             }
         });
     }());
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-41793914-3', 'auto');
+    ga('send', 'pageview');
+
 </script>
 </body>
 </html>
